@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+:root{
+    --major-bg-color:#131921;
+    --minor-bg-color:#ebeded;
+    --amajon-major-color:#febd68;
+
+}
+
+body{
+    background-color: var(--minor-bg-color);
+}
+/* main header */
+.header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 60px;
+   background-color: var(--major-bg-color);
+}
+.header-container{
+   height: 100%;
+}
+
+.header-columns{
+   display: flex;
+   justify-content: flex-start;
+   gap: 0px;
+   height: 100%;
+}
+
+.header-column-left
+{
+ 
+ display: flex;
+ padding: 20px;
+ gap: 20px;
+ margin-right: 35px;
+}
+.amazon-logo{
+   width: 100px;
+   
+}
+.column-left-location {
+   display: flex;
+   align-items: center;
+}
+.location-logo .material-symbols-outlined{
+   font-size: 20px;
+   margin-right: -0px;
+}
+.location-details{
+   line-height: 13px;
+   margin-bottom: 5px;
+}
+.location-details span{
+   color: white;
+   font-size: small;
+}
+.header-column-search{
+   display: flex;
+   max-width: 1150px;
+   flex: 1;
+   align-items: center;
+}
+.left{
+   display: flex;
+   font-size: 13px;
+   height: 40px;
+   width: 55px;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+   align-items: center;
+   padding-left: 9px;
+   border: none;
+}
+.search{
+   width: 100%;
+   min-width: 0;
+   height: 40px;
+   border: none;
+
+}
+.right{
+   display: flex;
+   font-size: 13px;
+   height: 40px;
+   width: 55px;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   align-items: center;
+   justify-content: center;
+   padding-left: 9px;
+   border: none;
+   background-color: var(--amajon-major-color);
+}
+.right .material-symbols-outlined{
+   font-size: 30px;
+   color: black;
+}
+.header-column-right{
+   display: flex;
+   align-items: center;
+   margin-left: 25px;
+}
+.flag{
+   color: white;
+   margin-right: 19px;
+}
+.image{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.image-jpg{
+   border-radius: 1px;
+   width: 20px;
+}
+
+.sign-right{
+   font-size: 12px;
+   line-height: 16px;
+   margin-right: 50px;
+   color: white;
+}
+
+.returns-right{
+    font-size: 12px;
+    line-height: 16px;
+   margin-right: 30px;
+    color: white;
+}
+.cart-right{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+.cart-right-logo{
+   margin-bottom: 9px;
+   margin-right: -8px;
+}
+.cart-right span{
+   font-size: 14px;
+}
+.section1{
+   margin-top: 60px;
+    width: 100%;
+    height: cover;
+    background:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/ATF/revised/new/Skincare-Herofader-PC._CB594538667_.jpg");
+    background-size: contain;
+    display: flex;
+
+ }
+
+ .section1 .section1-container{
+    margin-top: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+ }
+ .section1 .section1-container .section1-column{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+ }
+
+ .section1 .section1-container .section1-column img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+
+ }
+
+ .section1 .section1-container .section1-column p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007185;
+ }
+
+ .section1 .section1-container .section1-column button{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    background-color:var(--amajon-major-color);
+    padding: 8px;
+    border-radius: 10px;
+
+ }
+
+ .section-2{
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+ }
+ 
+ .section-2-container h3{
+    margin-bottom: 20px;
+
+ }
+
+ .product-cards{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: nowrap;
+    overflow: auto;
+ }
+
+.product-card{
+    display: inline-block;
+    width: 300px;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.product-card img{
+    width: auto;
+    height: auto;
+    max-width: 270px;
+    max-height: 200px;
+}
+
+.section-3{
+   background-color: white;
+}
+
+.section-3-container{
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 20px;
+}
+
+.product-detail-cards{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 100px;
+   flex-wrap: nowrap;
+   overflow: auto;
+}
+
+.product-detail-card{
+   display: inline-block;
+   width: 200px;
+   flex:0 0 auto;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 4;
+}
+
+.product-detail-card a{
+   color: #007185;
+}
+
+.product-detail-card a:hover{
+   color: #c45500;
+}
+.product-delivered-by{
+  color: #222;
+  font-size: 13px;
+
+}
+
+.section-4{
+   padding: 20px;
+
+}
+
+.section-4-container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.section-4-container p{
+   margin-top: 4px;
+   font-size: 14px;
+}
+
+.section-4-container button{
+   width: 240px;
+   height: 30px;
+   border: none;
+   background-color: var(--amajon-major-color);
+   padding: 8px;
+   border-radius: 5px;
+   vertical-align: center;
+   
+}
+
+footer{
+   background-color: #232F3E;
+}
+.footer-1-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer-1-container-columns{
+   display: flex;
+   justify-content: center;
+   vertical-align: center;
+   gap: 142px;
+   color: rgb(212, 211, 211);
+   margin-bottom: 38px;
+  
+}
+
+.footer-1-container-column{
+   margin-top: 30px;
+}
+.footer-1-container-column h4{
+   color: white;
+}
+.footer-1-container-column dl{
+   font-size: 14px;
+   list-style: none;
+   line-height: 26px;
+}
+
+.footer-2-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 110px;
+   
+}
+.amazon-footer-logo{
+   margin-top: 12px;
+   width: 80px;
+
+}
+
+.footer-2-container button{
+   padding: 4px;
+   display: flex;
+   vertical-align: center;
+   justify-content: start;
+   width: 130px;
+   height: 35px;
+   background-color: rgb(255 , 255 , 255 , 0.01);
+   color: white;
+   border-style: solid;
+   border-width: 0.5px;
+   border-color: grey;
+   border-radius: 4px;
+   
+}
+
+.material-symbols-outlined{
+   font-size: 16px;
+   margin-right: 6px;
+   margin-left: 6px;
+   margin-top: 4px;
+   color: white;
+}
+.footer-3{
+   margin-bottom: 21px;
+}
+.footer-3-container{
+   margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    vertical-align: center; 
+}
+.footer-3-container-unordered{
+   display: flex;
+   flex-wrap: wrap;
+   max-width: 1000px;
+   justify-content: center; 
+    vertical-align: center; 
+}
+.footer-3-container-list{
+   color: white;
+    font-size: 12px;
+    margin-right: 12px;
+    display: flex;
+   
+}
+.footer-4{
+   background-color: #131a22;
+   padding-bottom: 35px;
+}
+.footer-4-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.footer-4-container-columns{
+   display: flex;
+   gap: 120px;
+   row-gap: 21px;
+   flex-wrap: wrap;
+   max-width: 900px;
+}
+
+.footer-4-container-column {
+   color: white;
+}
+
+.footer-4-container-column h4{
+   font-size: 11px;
+   color: lightgrey;
+}
+.footer-4-container-column p{
+   font-size: 11px;
+   color: grey;
+}
+.footer-4-second-line{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: center;
+}
+.footer-4-third-line{
+   color: white;
+   display: flex;
+   justify-content: center;
+   font-size: 12px;
+}
